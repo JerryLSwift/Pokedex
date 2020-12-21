@@ -1,0 +1,430 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 1200px;
+}
+@media (max-width: 1100px) {
+  #right-side{
+    visibility: hidden;
+  }
+#left-side div{
+  visibility: hidden;
+}
+#pokedex-logo{
+  position: absolute;
+  top: 285px;
+  left: 110px;
+  width: 350px;
+  height: 180px;
+  background-image: url("pokemon/pokedex_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+  .hidingDiv{
+    position: absolute;
+    top: 98px;
+    left: 633px;
+    width: 224px;
+    height: 90px;
+    background-color: white;
+  }
+}
+#pokedex-container{
+  width: 95%;
+  height: auto;
+  margin: auto;
+  padding-bottom: 111px;
+}
+#left-side{
+  position: absolute;
+  top: 175px;
+  left: 50px;
+  width: 499px;
+  height: 600px;
+  background-color: #db0000;
+  border-radius: 0px 0px 0px 50px;
+}
+#center-curve{
+  position: absolute;
+  top: 103px;
+  left: 347px;
+  width: 500px;
+  height: 72px;
+  background-color: #db0000;
+  border-radius: 100px 100px 0px 0px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+#center-henge{
+  position: absolute;
+  top: 106px;
+  left: 548px;
+  width: 80px;
+  height: 673px;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr 3fr 1fr;
+  border: 2px solid black;
+}
+#top-left-side{
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  width: 575px;
+  height: 164px;
+  background-color: #ff0000;
+  border-radius: 50px 0px 0px 0px;
+}
+#glass-eye{
+  position: relative;
+  top: 30px;
+  left: 29px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 6px solid white;
+  background: radial-gradient(circle at 47px 41px, #38c2ff, #277ca3, #081b23);
+}
+#top-left-lights{
+  position: relative;
+  width: auto;
+  height: auto;
+  top: -77px;
+  left: 145px;
+  display: inline-block;
+}
+#display-container{
+  position: relative;
+  top: 40px;
+  left: 38px;
+  width: 420px;
+  height: 325px;
+  background-color: gray;
+  border-radius: 10% 10% 10% 0%;
+}
+#display-lights{
+  position: relative;
+  top: 5px;
+  left: 175px;
+  display: block;
+}
+#pokemon-display{
+  position: relative;
+  top: 25px;
+  left: 25px;
+  width: 370px;
+  height: 225px;
+  background-color: white;
+  background-image: url("pokemon/001.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  border-radius: 25px;
+}
+#display-button{
+  position: relative;
+  top: 0px;
+  left: 70px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+#tringle{
+  position: relative;
+  top: 43px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-bottom: 55px solid #db0000;
+  border-right: 55px solid transparent;
+}
+#display-airvents{
+  position: relative;
+  top: -40px;
+  left: 271px;
+  width: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+#talk-info-btn{
+  position: relative;
+  top: 106px;
+  left: 35px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: blue;
+}
+#start-select-div{
+position: relative;
+top: -4px;
+left: 145px;
+}
+#pokemon-id{
+  position: relative;
+  top: 29px;
+  left: 180px;
+  width: 130px;
+  height: 100px;
+  background-color: green;
+  border-radius: 25%;
+}
+#id-display{
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 79%;
+  height: 79%;
+  border-radius: 25%;
+  background-color: white;
+}
+#id-display h1{
+  text-align: center;
+  font-size: 55px;
+  margin-top: 5px;
+}
+#D-pad{
+  position: relative;
+  top: -95px;
+  left: 346px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 125px;
+  height: 125px;
+}
+#right-side{
+  position: absolute;
+  top: 175px;
+  left: 624px;
+  width: 499px;
+  height: 600px;
+  background-color: #db0000;
+  border-radius: 0px 0px 50px 0px;
+}
+#stats-display{
+  position: relative;
+  top: 57px;
+  left: 60px;
+  width: 380px;
+  height: 213px;
+  background-image: radial-gradient( #2bdb00,#2bdb00,#2bdb00, #65ff51);
+  border-radius: 25px;
+}
+#btn-grid{
+  position: relative;
+  top: 70px;
+  left: 73px;
+  width: 353px;
+  height: 112px;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+}
+#right-lights{
+  position: relative;
+  top: 95px;
+  left: 71px;
+}
+#right-start-select{
+  position: relative;
+  top: 93px;
+  left: 194px;
+}
+#two-arrows{
+  position: relative;
+  top: 130px;
+  left: -165px;
+}
+#round-arrow{
+  position: relative;
+  top: 124px;
+  left: 365px;
+  width:46px;
+  height: 46px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+#right-bottom-btn{
+  position: relative;
+  top: 146px;
+  left: 76px;
+
+}
+#display-div{
+  width: 100%;
+  margin: auto;
+  padding: 5% 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* this starts the class section */
+
+.red{
+  background: radial-gradient(circle at 10px 9px, #ff0000, #440000);
+}
+.green{
+  background: radial-gradient(circle at 10px 9px, #00ff00, #000);
+}
+.yellow{
+  background: radial-gradient(circle at 10px 9px, #fff000, #000);
+}
+.medBlackBorder{
+  border: 3px solid black;
+}
+.smBlackBorder{
+  border: 1px solid black;
+}
+.rightBottomBtn{
+  float: left;
+  width: 130px;
+  height: 50px;
+  background-color: yellow;
+  margin-left: 30px;
+  border-radius: 20px;
+}
+.twoArrows{
+  float: left;
+  width: 50px;
+  height: 40px;
+  background-color: gray;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+.ltArrow{
+  border-radius: 20px 0px 0px 20px;
+}
+.rtArrow{
+  border-radius: 0px 20px 20px 0px;
+}
+.rightLights{
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.startSelectBtn{
+  width: 50px;
+  height: 13px;
+  background-color: white;
+  border-radius: 25%;
+  border: 1px solid black;
+  float: left;
+  margin-left: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.displayLights{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 20px;
+}
+.vent{
+  width: 40px;
+  height: 5px;
+  background-color: black;
+}
+.littleLight{
+  width: 25px;
+  height: 25px;
+  float: left;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.littleHenge{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background: rgb(219,0,0);
+  background: linear-gradient(90deg, rgba(219,0,0,1) 38%, rgba(255,0,0,1) 52%, rgba(219,0,0,1) 65%);
+}
+.bigHenge{
+  background: rgb(219,0,0);
+  background: linear-gradient(90deg, rgba(219,0,0,1) 38%, rgba(255,0,0,1) 52%, rgba(219,0,0,1) 65%);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.dBtn{
+  background-color: #191919;
+}
+.btn{
+  background-image: linear-gradient(#32a1fc, #0000ff);
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: -2px 2px 0px 0px #0000ff;
+}
+.upTriangle{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 15px 15px 15px;
+border-color: transparent transparent gray transparent;
+margin: 0 auto;
+margin-top: 11px;
+}
+.ltTriangle{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 15px 0 15px 15px;
+border-color: transparent transparent transparent gray;
+margin: 0 auto;
+margin-top: 6px;
+}
+.rtTriangle{
+  width: 0;
+height: 0;
+border-style: solid;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 15px 15px 15px 0;
+border-color: transparent gray transparent transparent;
+margin: 0 auto;
+margin-top: 6px;
+}
+.downTriangle{
+  width: 0;
+height: 0;
+border-style: solid;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 15px 15px 0 15px;
+border-color: gray transparent transparent transparent;
+margin: 0 auto;
+margin-top: 15px;
+}
+.ltArrowArrow{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent red;
+  margin: 0 auto;
+  margin-top: 6px;
+
+}
+.rtArrowArrow{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent red transparent transparent;
+  margin: 0 auto;
+  margin-top: 6px;
+}
